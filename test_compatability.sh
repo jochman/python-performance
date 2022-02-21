@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! python --help; then \
+if ! python --help > /dev/null; then \
     echo "Could not find Python, please install Python"; \
     exit 1; \
 
@@ -8,7 +8,7 @@ else \
     echo "PyPy found!"; \
 fi \
 
-if ! pipenv --help; then  \
+if ! pipenv --help > /dev/null; then  \
     echo "Could not find Pipenv, please install Pipenv"; \
     exit 1; \
 else \

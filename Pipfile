@@ -8,5 +8,9 @@ mypy="*"
 
 [dev-packages]
 
+[scripts]
+compile = "mypyc fib.py"
+test = "bash ./test.sh"
+
 [requires]
 python_version = "3.10"
